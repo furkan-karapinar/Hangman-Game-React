@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+body {
+    @apply bg-white dark:bg-gray-900;
+    @apply text-gray-900 dark:text-gray-100;
+    @apply transition-colors duration-300 ease-in-out;
+}
+
+.top-buttons {
+    @apply text-black border-black dark:text-white dark:border-white 
+    border-2 text-2xl px-4 py-2 rounded-lg m-2 hover:bg-gray-300 dark:hover:bg-gray-600
+    transition-colors duration-300 ease-in-out;
+
+}
+
+.game-title {
+    @apply text-5xl text-center font-bold text-gray-900 dark:text-white mx-10 mb-10;
+}
